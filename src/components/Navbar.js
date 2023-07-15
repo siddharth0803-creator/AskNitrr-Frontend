@@ -42,7 +42,7 @@ const Navbar=()=> {
         user: user
       }
       try{
-        const res=await axios.post("http://localhost:5000/api/questions",payload)
+        const res=await axios.post("https://asknitrr-backend-e5jt.onrender.com/api/questions",payload)
         console.log(res.data)
         setisModalOpen(false)
         window.location.href = "/";

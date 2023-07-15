@@ -7,7 +7,7 @@ import axios from 'axios'
 const Feed = () => {
   const [posts, setposts] = useState([])
   useEffect(()=>{
-    axios.get("http://localhost:5000/api/questions")
+    axios.get("https://asknitrr-backend-e5jt.onrender.com/api/questions")
     .then((res)=>{
       console.log(res.data)
       setposts(res.data.reverse())

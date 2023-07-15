@@ -38,7 +38,7 @@ const Post = ({post}) => {
             user: user
         }
         try{
-            const res= await axios.post("http://localhost:5000/api/answers",payload)
+            const res= await axios.post("https://asknitrr-backend-e5jt.onrender.com/api/answers",payload)
             console.log(res.data)
             setisModalOpen(false)
             window.location.href = "/";
